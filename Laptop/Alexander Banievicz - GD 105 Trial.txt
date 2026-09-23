@@ -1,0 +1,111 @@
+//Alexander Banievicz - GD 105 Trial 1 - 9/23/2026
+size(1000,1000);
+background(255);
+strokeWeight(8);
+noFill();
+//The plan is to create a version of the slyph shoes, but instead of wind, a plume of water is used to fly.
+
+//draws the right part of the water sigil (remastered)
+circle(600,400,50);
+//draws the left part of the water sigil (remastered)
+circle(400,600,50);
+//draws the center part of the water sigil (remastered)
+line(500,350,500,650);
+line(500,350,600,250);
+line(500,650,400,750);
+
+//Draws 4 triangles (signs of convergence) around where the ring will be.
+triangle(450,100,550,100,500,200);
+triangle(100,450,100,550,200,500);
+triangle(450,900,550,900,500,800);
+triangle(900,450,900,555,800,500);
+
+//Draws 4 lines at the base of what will be the signs of levitation around the ring.
+line(275,175,175,275);
+line(275,825,175,725);
+line(825,275,725,175);
+line(725,825,825,725);
+
+//Draws 4 lines that are perpendicular to the 4 base lines, pointing toward the center.
+line(225,225,300,300);
+line(225,775,300,700);
+line(775,775,700,700);
+line(775,225,700,300);
+
+//top left arrow's lines
+line(300,300,300,225);
+line(300,300,225,300);
+//bottom left arrow's lines
+line(300, 700, 300, 775);
+line(300, 700, 225, 700);
+//top right arrow's lines
+line(700,300,700,225);
+line(700,300,775,300);
+//bottom right arrrow's lines
+line(700,700,700,775);
+line(700,700,775,700);
+
+//ring is drawn at the end to complete the spell (order matters!)
+circle(500,500,900);
+
+
+
+
+
+//Alexander Banievicz - GD 105 Trial 1 - 9/23/2026
+size(1000,1000);
+background(255);
+strokeWeight(8);
+noFill();
+//The plan is to create a version of the slyph shoes, but instead of wind, a plume of water is used to fly.
+
+//Draws 4 triangles (signs of convergence) around where the ring will be.
+triangle(450,100,550,100,500,200);
+triangle(100,450,100,550,200,500);
+triangle(450,900,550,900,500,800);
+triangle(900,450,900,555,800,500);
+
+//Draws 4 perpendicular lines at the base of what will be the signs of levitation around the ring.
+line(275,175,175,275);
+line(275,825,175,725);
+line(825,275,725,175);
+line(725,825,825,725);
+
+line(225,225,300,300);
+line(225,775,300,700);
+line(775,775,700,700);
+line(775,225,700,300);
+
+
+//ring is drawn at the end to complete the spell (order matters!)
+circle(500,500,900);
+
+
+
+
+
+
+
+
+
+
+
+//Alexander Banievicz - GD 105 Trial 1 - 9/23/2026
+size(1000,1000);
+background(255);
+strokeWeight(8);
+noFill();
+//The plan is to create a version of the slyph shoes, but instead of wind, a plume of water is used to fly.
+
+
+triangle(450,100,550,100,500,200);
+triangle(100,450,100,550,200,500);
+triangle(450,900,550,900,500,800);
+triangle(900,475,900,525,850,500);
+
+line(275,175,175,275);
+line(275,
+
+
+//ring is drawn at the end to complete the spell (order matters!)
+circle(500,500,900);
