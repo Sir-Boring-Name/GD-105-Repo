@@ -1,11 +1,14 @@
 //Alexander Banievicz - 11/4/2026 - Screeching Stragump (Trial 2) Animation
 
 PImage arm, n3ds, n3dsSquish, rFace, lFace, body, legs, jaw, jawCover;
-PVector armPos, n3dsPos, n3dsSquishPos ,rFacePos, lFacePos, bodyPos, legs1Pos, legs2Pos, jawPos, jawCoverPos;
-
-void soundWave(PShape wave, int x, int y){
+PVector armPos, n3dsPos, n3dsSquishPos ,rFacePos, lFacePos, bodyPos, legs1Pos, legs2Pos, jawPos, jawCoverPos, soundPos;
+PShape sound;
+void soundWave(){
   
   
+  for (int i=0;i<10;i++){
+  shape(sound,soundPos.x-(i*10),soundPos.y-(i*30),sound.width/4,sound.height/4);
+  }
 }
 
 void setup(){
@@ -23,6 +26,7 @@ void setup(){
   lFace = loadImage("dog face left.png");
   body = loadImage("tree stump.png");
   legs = loadImage("legs.png");
+  sound = loadShape("sound waves.svg");
   
   bodyPos = new PVector (0,0);
   jawCoverPos = new PVector (-15,-203);
@@ -34,11 +38,14 @@ void setup(){
   n3dsPos = new PVector (170,-150);
   n3dsSquishPos = new PVector (170,-220);
   armPos = new PVector (200,10);
+  soundPos = new PVector(random(-400,400),random(-400,400));
 }
 void draw(){
   background(255);
   //textSize(15);
   translate(width/2,height/2);
+  soundWave();
+  soundWave();
   text("Screeching Stragump",130,-300);
   imageMode(CENTER);
   image(body,bodyPos.x,bodyPos.y,body.width/8,body.height/8);
@@ -71,4 +78,7 @@ void draw(){
     //rectMode(CENTER);
     //rect(0,-204,100,50);
   }
+  if(frameCount < 3){ 
+    println(frameCount); 
+    saveFrame("frames/output_####.png");}
 }
